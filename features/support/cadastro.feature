@@ -14,7 +14,7 @@ Funcionalidade:  Simular Seguro
             | cel         | mail            |
             | 48989134999 | teste@gmail.com |
             E clico no botão para contratar
-        Então sou redirecionado para a tela de escolha dos produtos
+        Então sou redirecionado para a tela de cadastro completo
 
     Esquema do Cenario: Tentativa de Cadastro com inconsistências no primeiro formulário
 

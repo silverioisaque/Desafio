@@ -46,7 +46,7 @@ Quando("clico no botão para contratar") do
   @cadastro_page.botao_contratar
 end
 
-Então("sou redirecionado para a tela de escolha dos produtos") do
+Então("sou redirecionado para a tela de cadastro completo") do
   #sleep necessário pois a atualização de dados da página demora
   sleep 2
   #checkpoint para garantir que estou na página correta
