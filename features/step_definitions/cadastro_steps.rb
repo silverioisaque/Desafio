@@ -31,6 +31,7 @@ Quando("preencho os dados de contato:") do |table|
   validacaoSegundoFormulario = @cadastro_page.validacao_texto_form2
   expect(validacaoSegundoFormulario).to have_content "Quais são as melhores formas de entrar em contato?"
 
+  user = table.hashes.first
   @cadastro_page.checkbox_ligacao.set(false)
   @cadastro_page.checkbox_whatsapp.set(true)
   @cadastro_page.checkbox_email.set(true)
@@ -39,12 +40,17 @@ Quando("preencho os dados de contato:") do |table|
   @cadastro_page.campo_email.set user[:mail]
   @cadastro_page.checkbox_autorizacao.set(true)
   @cadastro_page.botao_encontrar_seguro
+end
+
+Quando("clico no botão para contratar") do
   @cadastro_page.botao_contratar
 end
 
 Então("sou redirecionado para a tela de escolha dos produtos") do
+  #sleep necessário pois a atualização de dados da página demora
+  sleep 2
   #checkpoint para garantir que estou na página correta
-  expect(current_path).to have_content ("produto")
+  expect(current_path).to have_content ("cadastro")
 end
 
 Então("vejo a mensagem de alerta: {string}") do |alerta_esperado|

@@ -72,4 +72,8 @@ class CadastroPage
   def validacao_texto_form2
     find("p", text: "Quais são as melhores formas de entrar em contato?")
   end
+
+  def validacao_pagina
+    find("p", text: "Precisamos de mais alguns dados")
+  end
 end

@@ -11,8 +11,9 @@ Funcionalidade:  Simular Seguro
             | Isaque | 02/02/1981 | ADM       |
             E submeto a primeira parte do formulário
             E preencho os dados de contato:
-            | cel         | mail              |
-            | 48989134999 | "teste@gmail.com" |
+            | cel         | mail            |
+            | 48989134999 | teste@gmail.com |
+            E clico no botão para contratar
         Então sou redirecionado para a tela de escolha dos produtos
 
     Esquema do Cenario: Tentativa de Cadastro com inconsistências no primeiro formulário
@@ -31,7 +32,7 @@ Funcionalidade:  Simular Seguro
             | Ana Maria      | 04/15/2000     | BIOM            | Data inválida                                 |
             | Anderson Silva | 05/10/2010     | JARDINEIRO      | A idade deve ser maior que 18 anos            |
 
-    @teste
+    @inconsistencias
     Esquema do Cenario: Tentativa de Cadastro com inconsistências no segundo formulário
 
         Dado que acesso a página principal
