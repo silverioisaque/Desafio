@@ -31,7 +31,7 @@ Funcionalidade:  Simular Seguro
             | Ana Maria      | 04/15/2000     | BIOM            | Data inválida                                 |
             | Anderson Silva | 05/10/2010     | JARDINEIRO      | A idade deve ser maior que 18 anos            |
 
-    @teste
+    @inconsistencias
     Esquema do Cenario: Tentativa de Cadastro com inconsistências no segundo formulário
 
         Dado que acesso a página principal
