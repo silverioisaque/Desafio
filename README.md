@@ -17,4 +17,4 @@ Baixar a versão correspondente do chromedriver no link:
 	https://chromedriver.storage.googleapis.com/index.html
 O chormedriver deve ficar armazenado em uma das pastas do PATH (echo %path%) (caso seja windows)
 
-Para executar o teste regrissivo basta estar na pasta do projeto e usar o comando "cucumber"
+Para executar o teste regressivo basta estar na pasta do projeto e usar o comando "cucumber"
