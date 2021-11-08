@@ -8,6 +8,7 @@ Baixar e instalar o ruby (recomendo versão Ruby+Devkit 2.6.8-1 (x64))
 Baixar e copiar a pasta do projeto para um diretório
 
 No terminal apontando para a pasta do projeto rode os comandos:
+
 	gem install bundle
 	
 	bundle install 
